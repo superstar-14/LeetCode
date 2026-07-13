@@ -7,8 +7,9 @@ class Solution:
             for j in range(i+1, len(nums)):
                 if nums[i] + nums[j] == target:
                     result.extend([i, j])
-        return result
+                    return result
+        return[]
 
 # test it
 sol = Solution()
-print(sol.twoSum([2, 7, 11, 15], 9))
+print(sol.twoSum([2, 6, 11, 15], 9))
