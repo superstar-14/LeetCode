@@ -10,10 +10,7 @@ class Solution:
             if tar in Map:
                 L.extend([Map[tar],i])
                 return L
-            else:
+            else: 
                 Map[nums[i]]=i
         return []
-
-# test it
-sol = Solution()
-print(sol.twoSum([2, 7, 11, 15], 9))
+       
