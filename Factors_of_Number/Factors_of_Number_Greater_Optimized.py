@@ -3,12 +3,14 @@ class Solution:
         l=[]
         if num==0:
             return [0]
-        for i in range(1,(num//2)+1): #Searches for numbers from 1 to n/2 because no factor of n lie beyond n/2 except for n itself
+        for i in range(1,int(num**0.5)+1): #Searches for numbers from 1 to sqrt(n) because if i is a factor then n/i is also a factor
             if num%i==0: #searches for divisors of num
                 l.append(i) #appends numbers to l for final result
-        l.append(num)
+                if i*i != num:
+                    l.append(num//i)
+        l.sort()
         return l
             
 # test it
 sol = Solution()
-print(sol.factor(100))
+print(sol.factor(36))

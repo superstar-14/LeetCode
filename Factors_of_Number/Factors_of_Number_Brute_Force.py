@@ -1,5 +1,5 @@
 class Solution:
-    def factorial(self,num):
+    def factor(self,num):
         l=[]
         if num==0:
             return [0]
@@ -10,4 +10,4 @@ class Solution:
             
 # test it
 sol = Solution()
-print(sol.factorial(0))
+print(sol.factor(0))
