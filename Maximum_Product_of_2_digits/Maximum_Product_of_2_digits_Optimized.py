@@ -4,7 +4,8 @@ class Solution:
         while n>0:
             a=n%10
             if a>m1:
-                m1,m2=a,m1
+                m2=m1
+                m1=a
             elif a>m2:
                 m2=a
             n=n//10
@@ -12,7 +13,7 @@ class Solution:
             
 # test it
 sol = Solution()
-print(sol.prod(1978))
+print(sol.prod(31))
 
 
 
