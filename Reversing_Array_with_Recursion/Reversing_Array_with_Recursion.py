@@ -16,5 +16,5 @@ class Solution:
         
 # test it
 sol = Solution()
-print(sol.rev([8,99,0,1],0,-1))
+print(sol.rev([1,2,3,4],0,-1))
 
