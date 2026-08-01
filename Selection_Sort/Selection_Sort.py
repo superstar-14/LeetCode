@@ -1,9 +1,12 @@
 class Solution:
     def sels(self,lis):
         for i in range(0,len(lis)):
+            min_ind=i
             for j in range(i+1,len(lis)):
-                if lis[j]<lis[i]: #use this line for descending sort  -->if lis[j]>lis[i]:
-                    lis[i],lis[j]=lis[j],lis[i]
+                if lis[j]<lis[min_ind]: #use this line for descending sort  -->if lis[j]>lis[min_ind]:
+                    min_ind=j
+            lis[i],lis[min_ind]=lis[min_ind],lis[i]
+
         return lis
 
 
