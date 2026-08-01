@@ -16,4 +16,4 @@ class Solution:
         
 # test it
 sol = Solution()
-print(sol.fib(1,0,1,l=[0,1]))
+print(sol.fib(3,0,1,l=[0,1]))
