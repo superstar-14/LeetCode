@@ -7,15 +7,7 @@ class Solution:
                 l[j+1]=l[j]
                 j=j-1
             l[j+1]=key
-        return l
-
-            
-                
-            
-
-       
-                
-           
+        return l                        
 # test it
 sol = Solution()
 print(sol.insertion([9,8]))
