@@ -19,6 +19,17 @@ class Solution:
                 j+=1
                     
         return r
+    
+    def merge_sort(self,l):
+        if len(l)<=1:
+            return l
+        mid=len(l)//2
+        left=l[:mid]
+        right=l[mid:]
+        left=self.merge_sort(left)
+        right=self.merge_sort(right)
+        return self.merge(left,right)
+
 # test it
 sol = Solution()
-print(sol.merge([5,6,7,8,9],[0,1,2,3,4]))
+print(sol.merge_sort([9,8,7,6,5,4,3,2,1]))
